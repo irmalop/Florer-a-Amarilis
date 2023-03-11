@@ -1,0 +1,227 @@
+.estilo-cuadrado{
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    animation-name: animacionCuadrado;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+.estilo-cuadrado2{
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(12, 185, 113);
+    animation-name: animacionCuadrado2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    /* animation-delay: 2s; */
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+.arriba{
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
+    width: 170px;
+    height: 85px;
+    background-color: yellow;
+    border-radius: 120px 120px 0 0;
+    animation: parriba 2s infinite;
+    position: relative;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+.abajo{
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
+    width: 170px;
+    height: 85px;
+    background-color: yellow;
+    border-radius: 0 0 120px 120px;
+    animation: pabajo 2s infinite;
+    position: relative;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+.pacman {
+    width: 170px;
+    height: 170px;
+    border: 1px solid red;
+    animation: pacman 4s infinite;
+    position: relative;
+
+}
+.pelota{
+    margin-top: 0px;
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+    left: 135px;
+    right: 0;
+    /* margin-bottom: 50px; */
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 100px 100px 100px 100px;
+    animation: animacionPelota 4s infinite;
+    /* position: relative;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear; */
+}
+.pelotaaa{
+    margin-top: 0px;
+    position: absolute;
+    top: 85px;
+    bottom: 0;
+    left: 1275px;
+    right: 0;
+    /* margin-bottom: 50px; */
+    width: 20px;
+    height: 20px;
+    background-color: rgb(243, 21, 32);
+    border-radius: 100px 100px 100px 100px;
+    animation: animacionPelotas 4s infinite;
+    opacity: 1;
+    /* position: relative; */
+    animation-delay: 1s;
+    /* animation-direction: alternate-reverse;
+    animation-timing-function: linear; */
+}
+@keyframes pacman {
+    0%{
+        left: 0%;
+    }
+    25%{
+        left: 25%;
+    }
+    50%{
+        left: 50%;
+    }
+    75%{
+        left: 75%;
+    }
+    100%{
+        left: 87%;
+    }
+}
+@keyframes parriba {
+    0% {
+        transform: rotate(0);
+        /* left: 0;
+        top: 0; */
+    }
+    50% {
+        transform: rotate(-35deg);
+        /* left: 1000px;
+        top: 0; */
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+@keyframes pabajo {
+    0% {
+        transform: rotate(0);
+        /* left: 0;
+        top: 0; */
+    }
+    50% {
+        transform: rotate(35deg);
+        /* left: 1000px;
+        top: 0; */
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+@keyframes animacionCuadrado {
+    from {
+        /* opacity: 1; */
+        /* background-color: rgb(226, 80, 43); */
+        /* transform: scale(.5, .5); */
+        transform: translate(100px, 100px);
+    }  
+    to { 
+        /* background-color: rgb(25, 240, 240); */
+        /* opacity: 0; */
+        /* transform: scale(); */
+    }
+}
+@keyframes animacionPelota {
+    0%{
+        /* background-color: brown; */
+        /* left: 10px;
+        top: 0; */
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        /* background-color: yellow; */
+        /* left: 200px;
+        top: 20px; */
+    }
+}
+@keyframes animacionPelotas {
+    0%{
+        /* background-color: brown; */
+        /* left: 10px;
+        top: 0; */
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    72%{
+        opacity: 1;
+    }
+    85%{
+        opacity: 0;
+        /* background-color: yellow; */
+        /* left: 200px;
+        top: 20px; */
+    }
+}
+@keyframes animacionCuadrado2 {
+    0%{
+        background-color: brown;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: yellow;
+        left: 150px;
+        top: 0;
+    }
+    50%{
+        background-color: orangered;
+        top: 150px;
+        left: 150px
+    }
+    75%{
+        background-color: darkmagenta;
+        left: 0;
+        top: 150px
+    }
+    100%{
+        background-color: tomato;
+        left: 0;
+        top: 0;
+    }
+}
